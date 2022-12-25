@@ -1,0 +1,16 @@
+@keyframes border{
+   0%{
+      border-color: #FF6400;
+   }
+   50%{
+      border-color: transparent;
+   }
+   100%{
+      border-color: #FF6400;
+   }
+}
+@keyframes animation__text{
+   0%{
+width: 0;
+   }
+}

@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol[class],
+li {
+   padding: 0;
+   list-style: none;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: #00A383 !important;
+}
+
+a:hover {
+   color: #006A55 !important;
+   transition: 0.3s;
+}
+h1{
+   background-color: #640CAB;
+   background-image: linear-gradient(90deg, #FF6400, #3F046F);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'GTWalsheimPro-Regular';
+   color: #FF6400 !important;
+}
+
+p {
+   font-family: 'GTWalsheimPro-Medium';
+   color: #fff !important;
+}
+
+img {
+   display: block;
+}
+
+html {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+
+   overflow-x: hidden;
+
+}
+
+body {
+   overflow-x: hidden;
+   box-sizing: border-box;
+   font-family: 'GTWalsheimPro-Medium';
+   background-color: #640CAB;
+}
+
+
+
+h2 {
+   font-size: 40px;
+}
+
+
+.wrap {
+   margin: 0 auto;
+   padding: 0 10px;
+   width: 100%;
+   max-width: 1376px;
+
+}
+
+.section {
+   margin: 0 auto;
+   padding: 0 10px;
+   width: 100%;
+   max-width: 1376px;
+
+}
