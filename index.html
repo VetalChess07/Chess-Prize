@@ -16,30 +16,47 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-   <main>
+<body id="body">
+  <main>
    <header class="header">
       <div class="header__inner">
          <div class="header__item header__item-logo">
-            <a class="logo__link" href="#"><img src="img/chess.png" alt="#" class="logo">
-            <span class="logo__span">Chess 
-               <br> Prize
-            </span>
-            </a>
-            <div class="docer__inner">
-               <p class="docer__inner-text">Chess Prize</p>
-            </div>
-            <div class="header__item ">
-               <h1 class="intro__title intro__title-mobail">
-                  Hello world <br> это <br>Chess Prize
-               </h1>
-            </div>
+            <a class="logo__link" href="#"><img src="img/logo.png" alt="#" class="logo"></a>
          </div>
+
+         <div class="header__item">
+            <p class="docer__inner-text">Chess Prize</p>
+         </div>  
          <div class="header__item header__item-btn">
-            <button class="header__btn btn open-popup">регестрация</button>
+            <div class="burger-btn">
+               <span class="burger-btn-line"></span>
+               <span class="burger-btn-line-center"></span>
+               <span class="burger-btn-line-last"></span>
+            </div>         
          </div>
       </div>
+      
+         
+           
+             
+             
+            
+          
+        
+       
+       <div class="burger__inner" id="burger__inner"> 
+          <button class="header__btn btn open-popup">регестрация</button>
+          <a href="https://lichess.org/tournament/bXmwsGgs" class="header__btn btn ">блог</a>
+          <a href="https://lichess.org/tournament/bXmwsGgs"  class="header__btn btn ">полит конфид</a>
+          <a href="https://lichess.org/tournament/bXmwsGgs"  class="header__btn btn ">контакты</a>
+
+      </div>
+       
+        
+       
    </header>
+
+  
    
    
 
@@ -70,7 +87,7 @@
    <section class="section">
       <div class="intro">
          <div class="intro__row">
-            <h1 class="intro__title intro__title-desct">
+            <h1 class="intro__title">
               Hello world <br> это <br><span class="header__item-span">Chess Prize</span>
             </h1>
          </div>
@@ -96,12 +113,37 @@
                     ...
                   </div>
                   <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
+                 
                 
                   
                 
                 
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section section__benefits">
+      <div class="benefits">
+         <h2 class="benefits__title">Наши преимущества</h2>
+         <div class="benefits__inner">
+            <div class="benefits__item">
+               <img src="img/benefit.png" alt="" class="benefits__img">
+            </div>
+            <div class="benefits__item benefits__item-grid">
+               
+                  <div class="benefits__item-block benefits__item-block1"> 
+                     <h3 class="benefits__item-title">Ламповое комьюнити</h3>
+                     <p class="benefits__item-text">Наше комьюнити полностью состоит из ламповых и вежливых людей</p>
+                  </div>
+                  <div class="benefits__item-block benefits__item-block2"> <h3 class="benefits__item-title">Слаженая команда</h3>
+                     <p class="benefits__item-text">Наше команда заинтересована в проведение туров на высшем уровне и мы делаем для этого все возможное.</p> </div>
+                  <div class="benefits__item-block benefits__item-block3">  <h3 class="benefits__item-title">Большое количество турниров.</h3>
+                     <p class="benefits__item-text">Мы часто проводим турниры как бесплатные так и платные с призами.</p></div>
+                  <div class="benefits__item-block benefits__item-block4"> <h3 class="benefits__item-title">С нами интересно</h3>
+                     <p class="benefits__item-text">Мы стараемся улучшать наши сервисы и мероприятия, с нами вы будете в центре шахматного мира </p></div>
+                  
             </div>
          </div>
       </div>
@@ -176,11 +218,7 @@
       <p class="footer__text">Наша комьюнити очень быстро растет и мы стараемся улучшать наши турниры. Вы готовы играть, зарабатывать и повышать свой уровень игры вместе с нами? Тогда мы ждем вас! </p>
       <button class="footer__button btn open-popup">регестрация</button>
       <div class="footer__inner">
-         <div class="footer__item"><a class="logo__link" href="#"><img src="img/chess.png" alt="#" class="logo">
-            <span class="logo__span">Chess 
-               <br> Prize
-            </span>
-            </a>
+         <div class="footer__item"><a class="logo__link" href="#"><img src="img/logo.png" alt="#" class="logo"></a>
          </div>
          <div class="footer__item">
             <a class="privacy__policy" href="#">политика конфиденциальности</a>

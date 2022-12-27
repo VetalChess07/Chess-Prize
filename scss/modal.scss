@@ -39,13 +39,13 @@
 
 body.active {
    overflow: hidden;
+height: 500px;
 }
 
 .popup {
    position: fixed;
    top: 50%;
    left: 50%;
-   background-color: red;
    transform: translate(-50%, -50%) scale(0);
    background: #fff;
    overflow: hidden;

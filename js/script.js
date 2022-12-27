@@ -43,16 +43,69 @@ inputs.forEach((input) => {
   });
 });
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   
   loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
+    
   },
  
   pagination: {
     el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
   },
 
 });
+
+// let burgerBtn = document.querySelector(".burger-btn");
+
+// let burger = document.querySelector('.burger');  
+
+// burgerBtn.addEventListener('click', (e) => {
+
+  //  burger.classList.toggle("open"); 
+  //  let burgerInner = document.querySelector('.burger__inner')
+
+ 
+  
+// });
+
+const hamb = document.querySelector(".burger-btn");
+const popup1 = document.querySelector("#burger__inner");
+const body = document.body;
+
+
+
+
+hamb.addEventListener("click", hambHandler);
+
+
+function hambHandler(e) {
+  e.preventDefault();
+  popup1.classList.toggle("open");
+  hamb.classList.toggle("active");
+  body.classList.toggle("noscroll");
+ 
+  let burgerLineFirst = document.querySelector('.burger-btn-line')
+ burgerLineFirst.classList.toggle("open");
+ let burgerLineCenter = document.querySelector('.burger-btn-line-center')
+ burgerLineCenter.classList.toggle("open");
+ let burgerLineLast = document.querySelector('.burger-btn-line-last')
+ burgerLineLast.classList.toggle("open");
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

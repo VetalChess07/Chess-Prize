@@ -16,7 +16,6 @@ li {
 /* Убираем внешние отступы */
 body,
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -36,16 +35,22 @@ dd {
 a {
    text-decoration: none;
    cursor: pointer;
-   color: #00A383 !important;
+   background-color: tomato;
+   background-image: linear-gradient(90deg, to, rgb(194, 40, 20));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: 0.3s;
 }
 
 a:hover {
-   color: #006A55 !important;
-   transition: 0.3s;
+   background-color: #fff;
+   background-image: linear-gradient(90deg, #FFF, #3F046F);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 h1{
-   background-color: #640CAB;
-   background-image: linear-gradient(90deg, #FF6400, #3F046F);
+   background-color: #fff;
+   background-image: linear-gradient(90deg, #FFF, #3F046F);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -56,12 +61,15 @@ h4,
 h5,
 h6 {
    font-family: 'GTWalsheimPro-Regular';
-   color: #FF6400 !important;
+   background-color: #fff;
+   background-image: linear-gradient(90deg, #FFF, #3F046F);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 p {
    font-family: 'GTWalsheimPro-Medium';
-   color: #fff !important;
+   color: #ffffff !important;
 }
 
 img {
@@ -81,7 +89,8 @@ body {
    overflow-x: hidden;
    box-sizing: border-box;
    font-family: 'GTWalsheimPro-Medium';
-   background-color: #640CAB;
+   background: #161512 linear-gradient(to bottom, hsl(37deg, 12%, 16%), hsl(37deg, 10%, 8%) 116px) no-repeat;;
+ 
 }
 
 
