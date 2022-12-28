@@ -80,24 +80,39 @@ const body = document.body;
 
 
 hamb.addEventListener("click", hambHandler);
-
+let closeBurger = document.querySelector('.close__block-burger');
 
 function hambHandler(e) {
   e.preventDefault();
   popup1.classList.toggle("open");
   hamb.classList.toggle("active");
   body.classList.toggle("noscroll");
- 
-  let burgerLineFirst = document.querySelector('.burger-btn-line')
+  
+  closeBurger.classList.toggle("open");
+  let burgerLineFirst = document.querySelector('.burger-btn-line');
  burgerLineFirst.classList.toggle("open");
  let burgerLineCenter = document.querySelector('.burger-btn-line-center')
  burgerLineCenter.classList.toggle("open");
  let burgerLineLast = document.querySelector('.burger-btn-line-last')
  burgerLineLast.classList.toggle("open");
- 
-}
+ }
 
 
+closeBurger.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+  e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+  popup1.classList.toggle("open");
+  hamb.classList.toggle("active");
+  body.classList.toggle("noscroll");
+  
+  closeBurger.classList.toggle("open");
+  let burgerLineFirst = document.querySelector('.burger-btn-line');
+ burgerLineFirst.classList.toggle("open");
+ let burgerLineCenter = document.querySelector('.burger-btn-line-center')
+ burgerLineCenter.classList.toggle("open");
+ let burgerLineLast = document.querySelector('.burger-btn-line-last')
+ burgerLineLast.classList.toggle("open");
+  
+})
 
 
 
