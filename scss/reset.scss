@@ -39,13 +39,20 @@ a {
    background-image: linear-gradient(90deg, to, rgb(194, 40, 20));
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   transition: all 3s ease;
 }
 
+
 a:hover {
+   transition: all 3s;
    background-color: #fff;
    background-image: linear-gradient(90deg, #FFF, #3F046F);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+}
+a:visited{
+   color: rgb(25, 18, 226);
+   background-image: none;
 }
 h1{
    background-color: #fff;
@@ -106,11 +113,12 @@ h2 {
    max-width: 1376px;
 
 }
-
+.btn{
+   cursor: pointer;
+}
 .section {
    margin: 0 auto;
    padding: 0 10px;
    width: 100%;
    max-width: 1376px;
-   
 }

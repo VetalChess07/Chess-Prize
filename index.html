@@ -5,15 +5,20 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title><link
+   <title>Document</title>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <link
    rel="stylesheet"
    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
  />
+ 
    <link rel="stylesheet" href="css/keyframes.css">
    <link rel="stylesheet" href="css/modal.css">
-   <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="css/reset.css">
+
 </head>
 
 <body id="body">
@@ -26,9 +31,9 @@
          <div class="header__item header__item-nav">
             <nav class="header__nav">
                <ul class="header__ul">
-                  <li class="header__list"><a class=" btn" href=""></a>блог</li>
-                  <li class="header__list"><a class=" btn" href=""></a>наш клуб</li>
-                  <li class="header__list"><a class="btn" href=""></a>поддержка</li>
+                  <li class="header__list"><a class="header__link btn" href="#">блог</a></li>
+                  <li class="header__list"><a class="header__link btn" href="#">наш клуб</a></li>
+                  <li class="header__list"><a class="header__link btn" href="#">поддержка</a></li>
                </ul>
             </nav>
          </div>  
@@ -58,11 +63,6 @@
        
    </header>
 
-  
-   
-   
-
-   
    <div class="popup__bg">
       <div class="popup">
          <div class="close-popup">
@@ -89,22 +89,22 @@
    <section class="section">
       <div class="intro">
          <div class="intro__row">
-            <h1 class="intro__title">
+            <h1 class="intro__title"  data-aos="slide-right"  data-aos-duration="1000" >
               Hello world <br> это <br><span class="header__item-span">Chess Prize</span>
             </h1>
          </div>
          <div class="intro__inner">
-            <div class="intro__item intro__item-text">
-               <p class="intro__text"> Вы любите играть в шахматы?</p>
+            <div data-aos="slide-right"  data-aos-duration="1000" class="intro__item intro__item-text">
+               <p  class="intro__text"> Вы любите играть в шахматы?</p>
               
-               <p class="intro__text">Вы считаете себя сильным игроком?</p>
+               <p  class="intro__text">Вы считаете себя сильным игроком?</p>
                
-               <p class="intro__text">Хотите зарабатывать занимаясь любимым делом? </p>
+               <p  class="intro__text">Хотите зарабатывать занимаясь любимым делом? </p>
                
                <p class="intro__text">Ищите яркие эмоции и крутое комьюнити?</p>
 
             </div>
-            <div class="intro__item intro__item-slider">
+            <div data-aos="slide-left"  data-aos-duration="1000" class="intro__item intro__item-slider">
                <div class="swiper">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
@@ -127,7 +127,7 @@
       </div>
    </section>
    <section class="section section__benefits">
-      <div class="benefits">
+      <div class="benefits _anim-items">
          <h2 class="benefits__title">Наши преимущества</h2>
          <div class="benefits__inner">
             <div class="benefits__item">
@@ -160,7 +160,7 @@
 
 
 
-            <img class="attraction__img-phone" src="img/attraction__phone.png" alt="">
+            <img class="attraction__img-phone"src="img/attraction__phone.png" alt="">
          </div>
          <div class="attraction__inner">
             <div class="attraction__item attraction__item-block">
@@ -169,7 +169,7 @@
                </p>
             </div>
             <div class="attraction__item attraction__item-block">
-               <button class="attraction__item-btn btn open-popup">регестрация</button>
+               <button class="attraction__item-btn btn open-popup">подать заявку</button>
             </div>
          </div>
       </div>
@@ -216,7 +216,7 @@
       </div>
    </section>
 
-   <footer class="footer">
+   <footer  class="footer">
       <p class="footer__text">Наша комьюнити очень быстро растет и мы стараемся улучшать наши турниры. Вы готовы играть, зарабатывать и повышать свой уровень игры вместе с нами? Тогда мы ждем вас! </p>
       <button class="footer__button btn open-popup">подать заявку</button>
       <div class="footer__inner">
@@ -238,7 +238,7 @@
             <a class="privacy__policy" href="#">наш телеграмм</a>
          </div>  
          <div class="footer__item">
-            <a class="privacy__policy" href="#">наше VK</a>
+            <a class="privacy__policy" href="#">наш VK</a>
          </div>
          <div class="footer__item">
             <a class="privacy__policy" href="http://www.kbr-chess.ru/">блог</a>
@@ -253,8 +253,10 @@
       </div>
    </footer>
 </main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/script.js"></script>
+   <script src="js/scroll.js"></script>
 </body>
 
 </html>

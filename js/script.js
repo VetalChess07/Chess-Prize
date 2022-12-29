@@ -59,18 +59,6 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-// let burgerBtn = document.querySelector(".burger-btn");
-
-// let burger = document.querySelector('.burger');  
-
-// burgerBtn.addEventListener('click', (e) => {
-
-  //  burger.classList.toggle("open"); 
-  //  let burgerInner = document.querySelector('.burger__inner')
-
- 
-  
-// });
 
 const hamb = document.querySelector(".burger-btn");
 const popup1 = document.querySelector("#burger__inner");
